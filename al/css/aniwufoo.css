@@ -1,0 +1,34 @@
+form.wufoo { padding:0 }
+
+.wufoo input.text,.wufoo textarea.textarea { background: none repeat scroll 0 0 #E9E9E9;
+                                             border: 1px solid #CCCCCC;
+                                             padding: 4px }
+
+
+.wufoo #Field1 { width: 244px; margin-right: 30px; font-size: 14px }
+
+.wufoo #Field2,.wufoo #Field3,.wufoo #Field4,.wufoo #Field5 { width: 244px }
+
+.wufoo li#fo3li1 { border-bottom: 5px solid #e9e9e9; padding-left:31px }
+
+.wufoo li#fo3li4 { border-top: 5px solid #e9e9e9; padding-left: 31px; padding-bottom: 31px }
+
+.wufoo li#fo3li3 { float:left; clear:none; padding-left: 31px }
+
+.wufoo li#fo3li5 { float:right; clear:none; margin-right: 25px }
+
+.wufoo li.buttons { padding:0 }
+
+.wufoo li.focused, form li.focused { background:none }
+
+.wufoo li span { margin:0 }
+
+.wufoo .info h2 { display:none;
+                  color: #111111;
+	          font-family: 'Arial Narrow', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+                  text-shadow: 0 1px 0 #FFFFFF;
+	          font-size: 26px; }
+
+.wufoo li div, .wufoo li div label, .wufoo li span label { font-size:14px }
+
+textarea.textarea { max-width: 528px; min-width: 528px }
