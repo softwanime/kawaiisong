@@ -175,42 +175,42 @@
 
 .light .tabs li {
 	background-color: #aaaaaa;
-	background-image: -moz-linear-gradient(top, #aaaaaa, #444444);
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #aaaaaa),color-stop(1, #444444));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444')";
+	background-image: -moz-linear-gradient(top, #aaaaaa, #444444); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #aaaaaa),color-stop(1, #444444)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444')"; /* IE8 */
 }
 
 .light .tabs li .active {
-	background-color: #401274;
-	background-image: -moz-linear-gradient(top, #651cb6, #401274); /* FF3.6 */
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #651cb6),color-stop(1, #401274));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#651cb6', EndColorStr='#401274');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#651cb6', EndColorStr='#401274')";
+	background-color: #761212;
+	background-image: -moz-linear-gradient(top, #b81c1c, #761212); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b81c1c),color-stop(1, #761212)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#b81c1c', EndColorStr='#761212'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b81c1c', EndColorStr='#761212')"; /* IE8 */
 }
 
-.light .tabs li .active:before {			
-	border: 3px solid #401274;					
+.light .tabs li .active:before {
+	border: 3px solid #761212;
 	border-top: none;
 	border-left: none;
 }
-			
+
 .light .tabs li .active:after {
-	border: 3px solid #401274;					
+	border: 3px solid #761212;
 	border-top: none;
 	border-right: none;
 }
 
 .light .tab-strip {
-	background: #401274;	
+	background: #761212;
 }
 
 .light .panes, .light .panes-scroll, .light .no-bg > div {
 	background-color: #ffffff;
 	background-image: -moz-linear-gradient(top, #ffffff, #cccccc); /* FF3.6 */
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #cccccc));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc')";
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #cccccc)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc')"; /* IE8 */
 }
 
 .light .panes > div, .light .panes-scroll > div {
