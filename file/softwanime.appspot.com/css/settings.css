@@ -1,4 +1,4 @@
-#HTML99{background:url(https://lh4.googleusercontent.com/_U0QaeycS3vw/TXshjmCu1PI/AAAAAAAAAVw/VeqXx2TMUVs/s1600/shadow_900.png) no-repeat 50% bottom;padding:0 0 7px;z-index:1 !important;height:345px}
+#HTML99{background:url(https://lh4.googleusercontent.com/_U0QaeycS3vw/TXshjmCu1PI/AAAAAAAAAVw/VeqXx2TMUVs/s1600/shadow_900.png) no-repeat 50% bottom;padding:0 0 7px;z-index:1 !important;height:365px}
 #banner{position:relative}
 #banner ul >li{display:none}
 .creative_layer a{color:#fff}
@@ -206,7 +206,7 @@ a:focus {outline:none}
 
 .kenburn-video-button:hover {opacity:1.0;}
 
-.video_container{
+.video_kenburn{
 		position:absolute;
 		top: 0; bottom: 0px;
 		width: 100%;
@@ -218,24 +218,18 @@ a:focus {outline:none}
 		text-shadow: #fff 1px 1px 1px;
 	}
 
-.video_container_wrap{
-	padding-right:20px;
-}
-
-.video_container .video_clip{
-	float: left;
-	padding-right: 20px;	
-}
-.video_container h2{
+.video_kenburn_wrap{padding-right:20px}
+.video_kenburn .video_clip{float: left;padding-right: 20px}
+.video_kenburn h2{
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 30px;
+        line-height: 30px;
 	font-weight: 700;
 	color: #999;
 	text-shadow: #fff 1px 1px 1px;
 	padding-top: 45px;
-	margin: 0 0 20px;
+	margin: 0;
 }
-
 .buttonlight {
  float: right;
  height: 30px;
@@ -290,7 +284,7 @@ a:focus {outline:none}
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	position:absolute;
-	bottom:-13px;
+	bottom:-33px;
 	z-index:1000;	
 }
 
