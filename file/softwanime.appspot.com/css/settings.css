@@ -206,7 +206,7 @@ a:focus {outline:none}
 
 .kenburn-video-button:hover {opacity:1.0;}
 
-.video_kenburn{
+.video_container{
 		position:absolute;
 		top: 0; bottom: 0px;
 		width: 100%;
@@ -218,18 +218,24 @@ a:focus {outline:none}
 		text-shadow: #fff 1px 1px 1px;
 	}
 
-.video_kenburn_wrap{padding-right:20px}
-.video_kenburn .video_clip{float: left;padding-right: 20px}
-.video_kenburn h2{
+.video_container_wrap{
+	padding-right:20px;
+}
+
+.video_container .video_clip{
+	float: left;
+	padding-right: 20px;	
+}
+.video_container h2{
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 30px;
-        line-height: 30px;
 	font-weight: 700;
 	color: #999;
 	text-shadow: #fff 1px 1px 1px;
 	padding-top: 45px;
-	margin: 0;
+	margin: 0 0 20px;
 }
+
 .buttonlight {
  float: right;
  height: 30px;
@@ -284,7 +290,7 @@ a:focus {outline:none}
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	position:absolute;
-	bottom:-33px;
+	bottom:-13px;
 	z-index:1000;	
 }
 
