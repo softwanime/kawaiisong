@@ -1,0 +1,31 @@
+.header-image.border {background-clip: border-box;   background-origin: border-box;    border: 5px solid #202020;}
+div.white-top div{box-shadow:0 1px 2px #FFFFFF inset, 0 2px 3px #BABABA, 0 4px 3px #BABABA;}
+div.white-top div, ul.white-top a.current, ul.white-top a:hover, ul.white-top a, #panes-bottom, #menu li.nolink span, .important-title, .ws_bullets .ws_bulframe, .kwicks li .kwicks-caption, .kwicks li, .price-col.first, .price-col.last{behavior:url(css/PIE.htc)}
+.button,.csbutton, .csbutton-dark, .csbutton-grey, .csbutton-color, .csbutton, .showhide li, .showhide li section, .pic3d, .event-time, .block-number, .th, th, .postheadericons .author, .postheadericons .category, .page-navigate .page, .page-navigate .pages, .page-navigate .next-link,  .page-navigate .current, .page-navigate .next, .page-navigate .previous, .comment-post .reply, .actions .next, .actions .prev, h2.current, .content-box,.content-box-blue,.content-box-green,.content-box-orange,.content-box-yellow,.content-box-red,.content-box-gray,.content-box-transparent, .keypoint, .tip,.info,.warning,.fail, .highlight,.highlight-blue,.highlight-red,.highlight-green,.highlight-purple,.highlight-orange,.highlight-brown,.highlight-grey,.highlight-bold, .pic-polarid, .pic-round, .pic3d-dark, .pic-round-shadow, .pic-inset, .price-col, .slide-object iframe, .slide-object video, input,select,textarea, .tooltip, ul.css-tabs a, #nav2,   .slider-action, .spot-action, .event-time .month, .bottom, .spot-bg, .jspDrag, .postcontent .category a, #accordion h2, #accordion2 h2, .comment-post-admin, .blog-author, .gravatar, .accord1, .accord2, .ws-title div, .error, .splitter ul li.segment-1, .splitter ul li.segment-2, .splitter ul li.segment-0, .splitter ul li.selected-1, .splitter ul li.selected-2, .splitter ul li.selected-0{ position:relative; -pie-lazy-init:true; behavior:url(css/PIE.htc)}
+.nivo-caption{ background: url('../../images/body/fade.png') repeat 0 0 transparent !important; border-color: #202020 !important;}
+.ws_bullets .ws_bulframe{border: 5px solid #000000;}
+.pic3d, .pic3d-dark{border-width: 0 !important;}
+.pic3d-dark{box-shadow: none}
+ul.css-tabs li a.current{z-index: 0}
+.kwicks li .kwicks-caption{float: left}
+#menu ul ul a:hover, #menu ul ul a.parent:hover{background: url('../../images/body/menu-h.png') no-repeat 0 0 transparent !important}
+#menu li.nolink span{background: url('../../images/body/menu-nolink.png') repeat-x 0 0 transparent !important}
+.spot-action{z-index: 0}
+.showhide li section{border: 1px solid #CCCCCC;}
+input,select,textarea{border-top-color: #CCCCCC; border-bottom-color: #CCCCCC; border-top-width: 1px; border-bottom-width: 1px;} 
+.comment-post-admin, .blog-author{border: 0 solid #CCCCCC;}
+.spot-bg{border-bottom: 1px solid #FFF;}
+input.csbutton, input.csbutton-dark, input.csbutton-grey, input.csbutton-color, #submit_button { min-height: 20px;}
+#nav2{background-color: #F0F0F0}
+.postcontent #search_box{line-height: 220%}
+/*tags  fallback*/
+.tag-body{background: url('../../images/widget/tag_b.png') repeat-x scroll 100% 0 transparent !important; margin-left: 5px}
+a.tag-body{ border: 0 none; height: 20px !important}
+.yellow.tag-body{border: 0 none !important}
+.tag:before{background: url('../../images/widget/tag_h.png') no-repeat scroll 0 0 transparent !important; border: 0 none; height: 30px !important; width: 19px !important;  left: -17px !important; top: 0 !important; z-index: 100}
+.tag:after{background: none; border: 0 none}
+.footer-overlay-bottom{background: url('../../images/body/footer-ov-bottom.png') repeat-x scroll 0 0 transparent !important;}
+.footer-overlay{position: relative; z-index: 1}
+ul.showhide section{overflow: visible}
+
+div.important, div.important.red, div.important:hover{background: none !important;}
