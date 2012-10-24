@@ -1,15 +1,16 @@
 #tab-area {
-    width: 550px;
+    width: 600px;
     margin: 40px auto 0 auto;
 	position: relative;
 }
 
 .dummy {
-	outline: none; 
+	outline: none;  /* For IE */
 }
 
 input[name=pane] { display: none;}
 
+/* Styles for the tabs */
 .tabs {
     position: relative;
     list-style: none;
@@ -62,6 +63,7 @@ input[name=pane] { display: none;}
 	cursor: pointer;
 }
 
+/* Style for span tag that causes active/current tab highlighting */
 .tabs li .active {
     position: absolute;
 	display: none;
@@ -78,6 +80,7 @@ input[name=pane] { display: none;}
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Code to achieve inverted round corners at bottom of #active */
 .tabs li .active:before {
 	content: '';
 	position: absolute;
@@ -104,13 +107,14 @@ input[name=pane] { display: none;}
 	border-radius: 0 0 0 18px;
 }
 
+/* The strip between the tabs and the panes */
 .tab-strip {
 	content: '';
 	position: relative;
 	clear: both;
 	z-index: 1;
 	height: 10px;
-	width: 550px;
+	width: 600px;
 	-moz-border-radius: 8px 8px 0 0;
 	-webkit-border-radius: 8px 8px 0 0;
 	border-radius: 8px 8px 0 0;
@@ -119,8 +123,10 @@ input[name=pane] { display: none;}
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+
+/* Styles for the panes and their parent wrapper */
 .panes-scroll {
-    width: 548px;
+    width: 598px;
 	position: relative;
     overflow:hidden;
     border: 1px solid #aaa;
@@ -145,28 +151,40 @@ input[name=pane] { display: none;}
 
 .panes-items > div {
     padding: 20px;
-	width: 510px;
+	width: 560px;
 	height: 0;
 	font: 12px/1.4 Calibri, "Myriad Pro", Myriad, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
 	float: left;
 }
 
+
+/******************** THE TAB SWITCHING FUNCTIONALITY **************/
+
+/* On page load with no hash tag in url, display first pane and highlight first tab */
 .panes-items > div:first-of-type { height: auto; }
 .tabs li:first-child .active { display: block;}
 
+
+/* On url hash change set zero height for all panes and remove highlight from all tabs */
 input[name=pane]:checked + .dummy .panes-items > div { height: 0; }
 input[name=pane]:checked + .dummy .tabs li .active { display: none;}
 
-#p1:checked + .dummy .panes-items { margin-left: 0;}
-#p2:checked + .dummy .panes-items { margin-left: -550px;}
-#p3:checked + .dummy .panes-items { margin-left: -1100px;}
 
+/* Scroll the required pane into view */
+#p1:checked + .dummy .panes-items { margin-left: 0;}
+#p2:checked + .dummy .panes-items { margin-left: -600px;}
+#p3:checked + .dummy .panes-items { margin-left: -1200px;}
+
+
+/* After the previous step now display the appropriate pane */
 #p1:checked + .dummy .panes-items > div:nth-of-type(1) ,
 #p2:checked + .dummy .panes-items > div:nth-of-type(2) ,
 #p3:checked + .dummy .panes-items > div:nth-of-type(3) {
 	height: auto;
 }
 
+
+/* And also highlight the appropriate tab */
 #p1:checked + .dummy .tabs li:nth-child(1) .active,
 #p2:checked + .dummy .tabs li:nth-child(2) .active,
 #p3:checked + .dummy .tabs li:nth-child(3) .active {
