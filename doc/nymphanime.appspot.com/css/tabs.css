@@ -160,8 +160,8 @@ input[name=pane]:checked + .dummy .panes-items > div { height: 0; }
 input[name=pane]:checked + .dummy .tabs li .active { display: none;}
 
 #p1:checked + .dummy .panes-items { margin-left: 0;}
-#p2:checked + .dummy .panes-items { margin-left: -600px;}
-#p3:checked + .dummy .panes-items { margin-left: -1000px;}
+#p2:checked + .dummy .panes-items { margin-left: -550px;}
+#p3:checked + .dummy .panes-items { margin-left: -110px;}
 
 #p1:checked + .dummy .panes-items > div:nth-of-type(1) ,
 #p2:checked + .dummy .panes-items > div:nth-of-type(2) ,
