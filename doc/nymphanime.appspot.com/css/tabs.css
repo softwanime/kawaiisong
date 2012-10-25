@@ -122,7 +122,7 @@ input[name=pane] { display: none;}
 }
 
 .panes-scroll {
-    width: 558px;
+    width: 550px;
 	position: relative;
     overflow:hidden;
     border: 1px solid #aaa;
