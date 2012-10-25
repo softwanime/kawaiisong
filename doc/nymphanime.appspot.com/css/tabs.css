@@ -80,7 +80,6 @@ input[name=pane] { display: none;}
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Code to achieve inverted round corners at bottom of #active */
 .tabs li .active:before {
 	content: '';
 	position: absolute;
@@ -107,7 +106,6 @@ input[name=pane] { display: none;}
 	border-radius: 0 0 0 18px;
 }
 
-/* The strip between the tabs and the panes */
 .tab-strip {
 	content: '';
 	position: relative;
@@ -123,8 +121,6 @@ input[name=pane] { display: none;}
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-
-/* Styles for the panes and their parent wrapper */
 .panes-scroll {
     width: 558px;
 	position: relative;
@@ -165,7 +161,7 @@ input[name=pane]:checked + .dummy .tabs li .active { display: none;}
 
 #p1:checked + .dummy .panes-items { margin-left: 0;}
 #p2:checked + .dummy .panes-items { margin-left: -600px;}
-#p3:checked + .dummy .panes-items { margin-left: -1400px;}
+#p3:checked + .dummy .panes-items { margin-left: -1000px;}
 
 #p1:checked + .dummy .panes-items > div:nth-of-type(1) ,
 #p2:checked + .dummy .panes-items > div:nth-of-type(2) ,
