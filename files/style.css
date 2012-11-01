@@ -1,4 +1,4 @@
-﻿#navbar-iframe,#blog-pager-newer-link,#blog-pager-older-link ,.item-control,.date-header,.feed-links,.home-link  {display: none !important;}
+ #navbar-iframe,#blog-pager-newer-link,#blog-pager-older-link ,.item-control,.date-header,.feed-links,.home-link  {display: none !important;}
 /* normalize css */
 /*---------------------*/
 header,nav,section { display: block; }
@@ -1225,7 +1225,7 @@ div.footer img
    padding: 1em 0;
    position: relative;
    text-align: left;
-   bottom: -19px;
+   bottom: -25px;
    text-decoration: none;
    color: #FFFFFF;
    width: 30%;
