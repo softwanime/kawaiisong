@@ -1284,3 +1284,20 @@ box-shadow: 2px 1px 5px #000000;
 #menu li.back .left{background:url(https://dl.dropbox.com/u/93470765/beulah/selected-right-sub.png) repeat-x right 0}
 #menu li div{background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.png) no-repeat -227px 0;_background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.gif) no-repeat -227px 0}
 #menu ul ul{background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.png) no-repeat 0 bottom;_background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.gif) no-repeat 0 bottom}
+
+/* socialmodal css */
+.blackout{display:none;position:fixed;_position:absolute;width:100%;z-index:10000;background-color:#000;margin:0;padding:0;left:0;top:0}
+.socialmodalOuter{display:none;font-family:arial;color:#575E6D;font-size:14px;line-height:20px;background:rgb(73,73,73); background:rgba(0,0,0,0.6);border-radius:10px;left:50%;padding:7px;position:fixed;_position:absolute;top:50%;z-index:10001}
+.socialmodal{background:none repeat scroll 0 0 #FFF;border-radius:3px;width:460px}
+.socialmodal .title{border-bottom:1px solid #E5E8EF;font-weight:bold;font-size:19px;font-weight:bold;padding:16px 15px 10px;text-align:center}
+.socialmodal .subtitle{margin:0;background:#f7c632;color:#b18b18;padding:4px;text-align:center;font-weight:bold;font-size:15px}
+.socialmodal .warning{margin:0;background:#cb2026;color:#fff;padding:4px;text-align:center}
+.socialmodal .content{padding:0 15px;margin-top:10px;line-height:17px}
+.socialmodal .share{padding:0 15px;margin:20px 0 15px;text-align:center;height:24px}
+.socialmodal .close{background:url(images/close.png) no-repeat;cursor:pointer;height:12px;position:absolute;right:15px;top:15px;width:12px;display:none}
+.socialmodal .button{float:left;width:115px;line-height:24px;height:24px}
+.socialmodal .like{margin-left:15px}
+.socialmodal .twttr{margin-left:30px}
+.socialmodal .plus{width:90px;margin-left:50px}
+.socialmodal .footer{clear:both;background:none repeat scroll 0 0 #E8EAEF;border-radius:0 0 3px 3px;border-top:1px solid #DDE0E8;padding:10px 0;color:#878D9C;text-shadow:0 1px 0 #FFF;text-align:center;font-size:13px}
+
