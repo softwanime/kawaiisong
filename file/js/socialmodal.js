@@ -7,7 +7,6 @@ var modals=new Array();var test=0;$.fn.socialmodal=function(params){var defaults
         uniqueName: 'showmodal',
         manualClose: true,        
         facebook: 'http://www.facebook.com/softwanimes',
-        plusone: 'http://www.softwanime.com/',
         twitter: 'softwanime',
         opacity: 0.8
     });
