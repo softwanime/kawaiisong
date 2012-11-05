@@ -1299,5 +1299,6 @@ box-shadow: 2px 1px 5px #000000;
 .socialmodal .like{margin-left:15px}
 .socialmodal .twttr{margin-left:30px}
 .socialmodal .plus{width:90px;margin-left:50px}
-.socialmodal .footer{clear:both;background:none repeat scroll 0 0 #E8EAEF;border-radius:0 0 0px 0px;border-top:1px solid #DDE0E8;padding:10px 0;color:#878D9C;text-shadow:0 1px 0 #FFF;text-align:center;font-size:13px}
+.socialmodal .footer{clear:both;background:none repeat scroll 0 0 #E8EAEF;border-radius:0 0 3px 3px;border-top:1px solid #DDE0E8;padding:10px 0;color:#878D9C;text-shadow:0 1px 0 #FFF;text-align:center;font-size:13px}
+
 
