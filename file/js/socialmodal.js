@@ -8,6 +8,7 @@ var modals=new Array();var test=0;$.fn.socialmodal=function(params){var defaults
         manualClose: true,        
         facebook: 'http://www.facebook.com/softwanimes',
         twitter: 'softwanime',
+         plusone: null,
         opacity: 0.8
     });
 });
