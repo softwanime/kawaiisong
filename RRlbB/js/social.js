@@ -8,6 +8,20 @@ $(document).ready(function($){
         fbrecId: 'http://www.softwanime.com',
         pinterestId: 'softwanime',
         rssId: "http://feeds.feedburner.com/Softwanime",
+        
+        		google: {
+			title: '',
+			link: false,
+			follow: '',
+			pageId: '112580443784150034581',
+			header: 2,
+			api_key: 'AIzaSyCnaRuqX3zuZsqk-Vwawe0nB_ivxsZ4O_o'
+		},
+		width: 310,
+		height: 420,
+		twitter: {
+		 thumb: true }
+        
         location: 'right',
         align: 'top',
         offset: 30,
