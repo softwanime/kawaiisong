@@ -17,10 +17,8 @@ $(document).ready(function($){
 			header: 2,
 			api_key: 'AIzaSyCnaRuqX3zuZsqk-Vwawe0nB_ivxsZ4O_o'
 		},
-		width: 310,
-		height: 420,
 		twitter: {
-		 thumb: true }
+		 thumb: true },
         
         location: 'right',
         align: 'top',
