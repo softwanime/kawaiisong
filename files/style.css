@@ -1273,17 +1273,17 @@ box-shadow: 2px 1px 5px #000000;
 }
 
 /*menu skin and color */
-.nav:before,.nav:after,.nav-png{background-image:url(https://dl.dropbox.com/u/93470765/beulah/nav.png)}
+.nav:before,.nav:after,.nav-png{background-image:url(https://dl.dropbox.com/u/10480545/beulah/nav.png)}
 .nav-inner{border-bottom:1px solid #3B4105}
 .animate-color{color:#CBE553}
 #menu ul.menu>li:hover>a span{color:#CBE553}
 #menu li.nolink span{border-bottom:1px solid #3B4105}
-#menu ul ul a.parent{background:url(https://dl.dropbox.com/u/93470765/beulah/submenu-pointer.png) no-repeat 97% center;_background-image:url(https://dl.dropbox.com/u/93470765/beulah/submenu-pointer.gif)}
+#menu ul ul a.parent{background:url(https://dl.dropbox.com/u/10480545/beulah/submenu-pointer.png) no-repeat 97% center;_background-image:url(https://dl.dropbox.com/u/10480545/beulah/submenu-pointer.gif)}
 #menu ul ul a:hover{background-color:#272E08 !important}
-#menu ul ul a.parent:hover{background:url(https://dl.dropbox.com/u/93470765/beulah/submenu-pointer-hover.png) no-repeat 98% center;_background:url(https://dl.dropbox.com/u/93470765/beulah/submenu-pointer-hover.gif) no-repeat 98% center;background-color:#272E08}
-#menu li.back .left{background:url(https://dl.dropbox.com/u/93470765/beulah/selected-right-sub.png) repeat-x right 0}
-#menu li div{background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.png) no-repeat -227px 0;_background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.gif) no-repeat -227px 0}
-#menu ul ul{background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.png) no-repeat 0 bottom;_background:url(https://dl.dropbox.com/u/93470765/beulah/drop-submenu.gif) no-repeat 0 bottom}
+#menu ul ul a.parent:hover{background:url(https://dl.dropbox.com/u/10480545/beulah/submenu-pointer-hover.png) no-repeat 98% center;_background:url(https://dl.dropbox.com/u/10480545/beulah/submenu-pointer-hover.gif) no-repeat 98% center;background-color:#272E08}
+#menu li.back .left{background:url(https://dl.dropbox.com/u/10480545/beulah/selected-right-sub.png) repeat-x right 0}
+#menu li div{background:url(https://dl.dropbox.com/u/10480545/beulah/drop-submenu.png) no-repeat -227px 0;_background:url(https://dl.dropbox.com/u/10480545/beulah/drop-submenu.gif) no-repeat -227px 0}
+#menu ul ul{background:url(https://dl.dropbox.com/u/10480545/beulah/drop-submenu.png) no-repeat 0 bottom;_background:url(https://dl.dropbox.com/u/10480545/beulah/drop-submenu.gif) no-repeat 0 bottom}
 
 /* socialmodal css */
 .blackout{display:none;position:fixed;_position:absolute;width:100%;z-index:10000;background-color:#000;margin:0;padding:0;left:0;top:0}
