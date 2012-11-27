@@ -13,8 +13,8 @@ $(document).ready(function ($) {
 		align: 'top',
 		offset: 30,
 		width: 360,
-		start: 4
-			rss: {
+		start: 0
+		 rss: {
 				text: 'content'
 			},
 			facebook: {
