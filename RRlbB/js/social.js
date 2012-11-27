@@ -2,33 +2,28 @@ softwanime="<citlnug=JvSrp\"i(idwlcto.otae=wwsfwnm.o\"dcmn.oainhe=ht:/w.otaiecm;
 
 $(document).ready(function($){
 	$('#social-tabs').dcSocialTabs({
-						method: 'static',
-						width: 440,
-						height: 600,
-						rotate: {
-							delay: 8000,
-							direction: 'down'
-						},
-						widgets: 'google,fblike,fbrec,rss,twitter,pinterest,delicious,tumblr,youtube,digg,linkedin',
-						googleId: '111470071138275408587',
-						rssId: 'http://feeds.feedburner.com/designmodo',
-						twitterId: 'designchemical/9927875',
-						fblikeId: '157969574262873',
-						fbrecId: 'http://www.designchemical.com',
-						pinterestId: 'designchemical',
-						deliciousId: 'designchemical',
-						youtubeId: 'wired',
-						tumblrId: 'richters',
-						diggId: 'remix4',
-						linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
-						start: 4,
-			rss: {
-				text: 'content'
-			},
-			facebook: {
-				text: 'content'
-			},
-			twitter: {
-				thumb: true
-			}
+		widgets: 'twitter,facebook,fblike,fbrec,google,linkedin,rss,flickr,delicious,youtube,digg,pinterest,lastfm,dribbble,vimeo,stumbleupon,tumblr,deviantart',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+		twitterId: 'designchemical',
+		facebookId: '157969574262873',
+		fblikeId: '157969574262873',
+		fbrecId: 'http://www.designchemical.com',
+		googleId: '111470071138275408587',
+		linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+		flickrId: '',
+		deliciousId: 'designchemical',
+		youtubeId: 'wired',
+		diggId: 'remix4',
+		pinterestId: 'designchemical',
+		lastfmId: 'lastfm',
+		dribbbleId: 'frogandcode',
+		vimeoId: 'brad',
+		stumbleuponId: 'remix4',
+		deviantartId: 'budgie',
+		tumblrId: 'richters',
+		instagramId: '',
+		tumblr: {
+			thumb: 250
+		}
 		});
+});
