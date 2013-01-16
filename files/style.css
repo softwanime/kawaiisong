@@ -1294,7 +1294,7 @@ box-shadow: 2px 1px 5px #000000;
 .socialmodal .warning{margin:0;background:#cb2026;color:#fff;padding:4px;text-align:center}
 .socialmodal .content{padding:0 15px;margin-top:10px;line-height:17px}
 .socialmodal .share{padding:0 15px;margin:20px 0 15px;text-align:center;height:24px}
-.socialmodal .close{background:url(images/close.png) no-repeat;cursor:pointer;height:12px;position:absolute;right:15px;top:15px;width:12px;display:none}
+.socialmodal .close{background:url(https://inspiranime.googlecode.com/svn/img/close.png) no-repeat;cursor:pointer;height:12px;position:absolute;right:15px;top:15px;width:12px;display:none}
 .socialmodal .button{float:left;width:115px;line-height:24px;height:24px}
 .socialmodal .like{margin-left:15px}
 .socialmodal .twttr{margin-left:30px}
