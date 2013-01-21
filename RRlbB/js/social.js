@@ -65,10 +65,15 @@ jQuery(document).ready(function($){
 		twitterId: 'softwanime',
 		facebookId: '168842063131283',
 		fblikeId: '168842063131283',
-		fbrecId: 'http://www.softwanime.com',
+		fbrecId: 'www.softwanime.com',
 		googleId: '112580443784150034581',
 		pinterestId: 'softwanime',
-		twitter: {
+	      location: 'right',
+        align: 'top',
+        offset: 30,
+        width: 360,
+        start: 0});  	
+    twitter: {
 			thumb: true
 		},
 		tweetId: 'softwanime'
