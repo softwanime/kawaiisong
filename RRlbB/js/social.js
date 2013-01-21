@@ -71,5 +71,9 @@ align: 'top',
 offset: 30,
 height: 600,
 width: 360,
-start: 0});
+start: 0,
+twitter: {  
+thumb: true
+},
+tweetId: 'softwanime'});
 });
