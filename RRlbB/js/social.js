@@ -1,10 +1,3 @@
-/*
- * DC Social Media Tabs
- * Copyright (c) 2012 Design Chemical
- * http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/
- * Version 1.6.1 (16-2-2012)
- */
- 
 (function($){SocialTabsObject=function(el,options){this.create(el,options)};$.extend(SocialTabsObject.prototype,{version:"1.6.1",create:function(el,options){this.defaults={widgets:"twitter,facebook,fblike,fbrec,google,rss,flickr,delicious,youtube,digg,pinterest,lastfm,dribbble,vimeo,stumbleupon,tumblr,deviantart,linkedin,instagram",twitter:{title:"Latest Tweets",link:true,follow:"Follow on Twitter",followId:"",limit:10,retweets:false,replies:false,thumb:false,images:"",icon:"twitter.png"},facebook:{title:"Facebook",
 link:true,follow:"Follow on Facebook",limit:10,text:"contentSnippet",icon:"facebook.png"},fblike:{title:"",link:false,follow:"",limit:36,stream:false,header:true,icon:"fblike.png"},fbrec:{title:"",link:false,follow:"",header:true,icon:"fbrec.png"},google:{title:"Google +1",link:true,follow:"Add to Circles",pageId:"",header:0,image_width:75,image_height:75,api_key:"AIzaSyDNTb8Iv6TgcszPbvsl-IamtvJBdsA5FGc",shares:true,limit:10,icon:"google.png"},youtube:{title:"",link:false,follow:"",limit:10,feed:"uploads",
 subscribe:true,icon:"youtube.png"},flickr:{title:"Flickr",link:true,follow:"",lang:"en-us",limit:20,icon:"flickr.png"},delicious:{title:"Delicious",link:true,follow:"Follow on Delicious",limit:10,icon:"delicious.png"},digg:{title:"Latest Diggs",link:false,limit:10,icon:"digg.png",hdrBg:"#ececec",hdrTxt:"#555",tabBg:"#4684be",tabTxt:"#b3daff",tabOnTxt:"#d41717",bdyBg:"#fff",stryBrdr:"#ccc",lnk:"#105cb6",descTxt:"#999",subHd:"#999"},pinterest:{title:"Pinterest",link:true,follow:"Follow on Pinterest",
@@ -63,3 +56,21 @@ sq+"&text="+st+"&via="+tweetId+'" class="share-twitter"></a>'}return s}function 
 if((xj2=Math.floor((d-s*xj)/s2))!=0)fuzzy+=xj2==1?" + 1 "+n2:" + "+xj2+" "+n2+"s"}fuzzy+=" ago";return fuzzy}function num(a){var b=a;if(a>999999)b=Math.floor(a/1E6)+"M";else if(a>9999)b=Math.floor(a/1E3)+"K";else if(a>999)b=Math.floor(a/1E3)+","+a%1E3;return b}function parseQ(url){var v=[],hash,q=url.split("?")[1];if(q!=undefined){q=q.split("&");for(var i=0;i<q.length;i++){hash=q[i].split("=");v.push(hash[1]);v[hash[0]]=hash[1]}}return v}function ticker(s,b,speed){var $a=$("li:last",s),$b=$("li:first",
 s),$gx;if(b=="next"){$gx=$a.clone().hide().css({opacity:0});$b.before($gx);$a.remove();$gx.slideDown(speed,"linear",function(){$(this).animate({opacity:1},speed)})}else{var bh=$b.outerHeight(true);$gx=$b.clone();$b.animate({marginTop:-bh+"px",opacity:0},speed,"linear",function(){$a.after($gx);$b.remove()})}}function fbLink(id,obj){var link="";jQuery.ajax({url:"https://graph.facebook.com/"+id,cache:true,dataType:"jsonp",async:false,success:function(a){obj.attr("href",a.link)}})}})(jQuery);
 jQuery(window).load(function(){jQuery.getScript("//platform.twitter.com/widgets.js",function(){})});
+
+
+jQuery(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		widgets: 'google,twitter,facebook,fblike,fbrec,pinterest,rss',
+		rssId: 'http://feeds.feedburner.com/softwanime',
+		twitterId: 'softwanime',
+		facebookId: '168842063131283',
+		fblikeId: '168842063131283',
+		fbrecId: 'http://www.softwanime.com',
+		googleId: '112580443784150034581',
+		pinterestId: 'softwanime',
+		twitter: {
+			thumb: true
+		},
+		tweetId: 'softwanime'
+	});
+});
