@@ -68,14 +68,14 @@ jQuery(document).ready(function($){
 		fbrecId: 'www.softwanime.com',
 		googleId: '112580443784150034581',
 		pinterestId: 'softwanime',
-	      location: 'right',
-        align: 'top',
-        offset: 30,
-        width: 360,
-        start: 0});  	
-    twitter: {
-			thumb: true
+                twitter: {  
+                thumb: true
 		},
 		tweetId: 'softwanime'
+                location: 'right',
+                align: 'top',
+                offset: 30,
+                width: 360,
+                start: 0
 	});
 });
