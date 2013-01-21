@@ -69,7 +69,7 @@ rssId: 'http://feeds.feedburner.com/softwanime',
 location: 'right',
 align: 'top',
 offset: 30,
-height: 450,
+height: 500,
 width: 290,
 start: 0,
 twitter: {  
