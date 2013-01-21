@@ -57,25 +57,18 @@ if((xj2=Math.floor((d-s*xj)/s2))!=0)fuzzy+=xj2==1?" + 1 "+n2:" + "+xj2+" "+n2+"s
 s),$gx;if(b=="next"){$gx=$a.clone().hide().css({opacity:0});$b.before($gx);$a.remove();$gx.slideDown(speed,"linear",function(){$(this).animate({opacity:1},speed)})}else{var bh=$b.outerHeight(true);$gx=$b.clone();$b.animate({marginTop:-bh+"px",opacity:0},speed,"linear",function(){$a.after($gx);$b.remove()})}}function fbLink(id,obj){var link="";jQuery.ajax({url:"https://graph.facebook.com/"+id,cache:true,dataType:"jsonp",async:false,success:function(a){obj.attr("href",a.link)}})}})(jQuery);
 jQuery(window).load(function(){jQuery.getScript("//platform.twitter.com/widgets.js",function(){})});
 
-
-jQuery(document).ready(function($){
-	$('#social-tabs').dcSocialTabs({
-		widgets: 'google,twitter,facebook,fblike,fbrec,pinterest,rss',
-		rssId: 'http://feeds.feedburner.com/softwanime',
-		twitterId: 'softwanime',
-		facebookId: '168842063131283',
-		fblikeId: '168842063131283',
-		fbrecId: 'www.softwanime.com',
-		googleId: '112580443784150034581',
-		pinterestId: 'softwanime',
-                twitter: {  
-                thumb: true
-		},
-		tweetId: 'softwanime'
-                location: 'right',
-                align: 'top',
-                offset: 30,
-                width: 360,
-                start: 0
-	});
+$(document).ready(function($){
+$("#social-tabs").dcSocialTabs({
+widgets: 'google,twitter,facebook,fblike,fbrec,pinterest,rss',
+googleId: '112580443784150034581',
+twitterId: 'softwanime',
+facebookId: '168842063131283',
+fblikeId: '168842063131283',
+pinterestId: 'softwanime',
+rssId: 'http://feeds.feedburner.com/softwanime',
+location: 'right',
+align: 'top',
+offset: 30,
+width: 360,
+start: 0});
 });
