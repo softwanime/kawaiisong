@@ -43,7 +43,7 @@ body {
    min-width: 1000px;
    color: #113040;
    background-color: #18323A;
-   background-image: url(http://demo.arrowthemes.com/html/beulah/css/skins/apple_green/../../../images/skins/apple_green/Bottom_texture.jpg);
+   background-image: url(https://lh5.googleusercontent.com/-HoOsHDno9LY/USsBSY3UX2I/AAAAAAAARQA/HnzLExoVtUc/s127/Bottom_texture.jpg);
    background-repeat: repeat;
    background-attachment: scroll;
    background-position: top left;
@@ -389,7 +389,7 @@ html, body
    height:322px;
    left: 0;
    margin-right: auto;
-   background-image: url(http://demo.arrowthemes.com/html/beulah/css/skins/apple_green/../../../images/skins/apple_green/page_gl.png);
+   background-image: url(https://lh5.googleusercontent.com/-5O6zhw6sBzw/USsBbEj1eRI/AAAAAAAARQM/x5ImTljms9o/s322/page_gl.png);
    background-repeat: no-repeat;
    background-position: left top;
 }
@@ -570,7 +570,7 @@ div.header
    left:1px;
    right:1px;
    height: 482px;
-   background-image: url(http://demo.arrowthemes.com/html/beulah/css/skins/apple_green/../../../images/skins/apple_green/header.jpg);
+   background-image: url(https://lh4.googleusercontent.com/-F73ld-PYWm8/USsBjjLSnXI/AAAAAAAARQY/Lks7NYaFNgA/s998/header.jpg);
    background-repeat: no-repeat;
    background-position: center center;
 }
@@ -1069,7 +1069,7 @@ background: url('https://lh6.googleusercontent.com/-AxXgVGySF34/T6-z5xOThxI/AAAA
 .footer-body ul li:hover a{color: #FFFFFF}
 
 .footer-top{
-   background-image: url(http://demo.arrowthemes.com/html/beulah/css/skins/apple_green/../../../images/skins/apple_green/footer-t.png);
+   background-image: url(https://lh4.googleusercontent.com/-40e88025ixc/USsBt6AhNiI/AAAAAAAARQk/-_0xwxdEvM0/s1280/footer-t.png);
    background-position:bottom left;
    background-repeat: repeat-x;
    height: 75px;
@@ -1104,7 +1104,7 @@ background: url('https://lh6.googleusercontent.com/-AxXgVGySF34/T6-z5xOThxI/AAAA
    right:0;
    top:0;
    bottom:50px;
-   background-image: url(http://demo.arrowthemes.com/html/beulah/css/skins/apple_green/../../../images/skins/apple_green/footer.png);
+   background-image: url(https://lh3.googleusercontent.com/-oqV_L5YXiBU/USsCvPOzP1I/AAAAAAAARQ8/-DOnGwoE-XQ/s300/footer.png);
    background-position:bottom left;
 }
 
