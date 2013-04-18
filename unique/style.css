@@ -415,11 +415,11 @@ position:  relative;
 top:0;
 left:0;
 }
-#auto_bg {
+#wallpapers {
 	background:url(https://lh3.googleusercontent.com/-ryNpoWaJUdg/UXBWF3mTUsI/AAAAAAAAL4c/ycqmdP6wkWY/s300/Section1.png)  no-repeat 0 0;
 }
-#hdri_bg {
-	background:url(https://lh3.googleusercontent.com/-rM7Gaqa0UFg/T4wjx6TLs_I/AAAAAAAAC8g/JNPWNUKE8YQ/s300/hdri_home.jpg)  no-repeat 0 0;
+#vectors {
+	background:url(https://lh5.googleusercontent.com/-a9RBQQEm1zY/UXBYe34h69I/AAAAAAAAL44/vwouXkOA75w/s300/vectors.png)  no-repeat 0 0;
 }
 #arch_bg {
 	background: url(https://lh6.googleusercontent.com/-QjYejosk4NU/T4wnVsYPH2I/AAAAAAAAC_I/TVywyGO8PaM/s300/architecture_home.jpg)  no-repeat 0 0;
