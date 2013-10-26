@@ -2,7 +2,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 $(function () {
     $("body").facebooktrafficdriver({
-        'url': 'facebook.com/softwanimes',
+        'url': 'http://facebook.com/softwanimes',
         'stream': 1,
         'headline': 'Help Us Reach Our Goal',
         'descr': 'We need to reach 5000 likes this year!',
