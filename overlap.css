@@ -1,0 +1,304 @@
+/********** BASIC STYLING (DESIGN 2) ******/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: #eee;
+}
+
+#title {
+	font: 42px 'Yanone Kaffeesatz', arial, serif;
+	letter-spacing: 2px;
+	margin: 40px 0;
+	color: #666;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff, 0 -1px 1px #000;
+}
+
+
+/***********  STYLING THE TAB SYSTEM ************/
+
+#tab-area {
+    width: 600px;
+    margin: 40px auto 0 auto;
+	position: relative;
+}
+
+.dummy{
+    outline: none;  /* For IE */
+}
+
+input[name=pane] { display: none;}
+
+
+/* Styles for the tabs */
+.tabs {
+    position: relative;
+    list-style: none;
+}
+
+.tabs li {
+    position: relative;
+    width: 100px;
+    height: 38px;
+	float: left;
+	cursor: pointer;
+	font: bold 14px  Calibri, "Myriad Pro", Myriad, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
+	letter-spacing: 1px;
+	border-right:  1px solid #aaa;
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.tabs li:first-child {
+	margin-left: 30px;
+	border-left: 1px solid #888;
+	-moz-border-radius: 8px 0 0 0;
+    -webkit-border-radius: 8px 0 0 0;
+    border-radius: 8px 0 0 0;
+}
+
+.tabs li:last-child {
+	border-right: 1px solid #888;
+	-moz-border-radius: 0 8px 0 0;
+    -webkit-border-radius: 0 8px 0 0;
+    border-radius: 0 8px 0 0;
+}
+
+
+.tabs label {
+    display: block;
+    height: 38px;
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+    color: #fff;
+    text-decoration: none;
+	text-align: center;
+	line-height: 38px;
+	outline: none;
+	cursor: pointer;
+}
+
+/* Style for span tag that causes active/current tab highlighting */
+.tabs li .active {
+    position: absolute;
+	display: none;
+    top: -10px;
+	left: -3px;
+	width: 110px;
+	height: 48px;
+    z-index: 1;
+	-moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Code to achieve inverted round corners at bottom of #active */
+.tabs li .active:before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: -10px;
+	width: 10px;
+	height: 8px;
+	background: transparent;
+	-moz-border-radius: 0 0 18px 0;
+	-webkit-border-radius: 0 0 18px 0;
+	border-radius: 0 0 18px 0;
+}
+
+.tabs li .active:after {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 107px;
+	width: 10px;
+	height: 8px;
+	background: transparent;
+	-moz-border-radius: 0 0 0 18px;
+	-webkit-border-radius: 0 0 0 18px;
+	border-radius: 0 0 0 18px;
+}
+
+/* The strip between the tabs and the panes */
+.tab-strip {
+	content: '';
+	position: relative;
+	clear: both;
+	z-index: 3;
+	height: 10px;
+	width: 600px;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Styles for the panes and their parent wrapper */
+.panes {
+    width: 598px;
+	height: 240px;
+	border: 1px solid #aaa;
+	border-top: none;
+	position: relative;
+	overflow: hidden;
+	background: none !important;
+	-moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.panes > div {
+    padding: 20px;
+	border: 1px solid #aaa;
+	border-top: none;
+	width: 560px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 600px;
+	z-index: 0;
+	font: 12px/1.4 Calibri, "Myriad Pro", Myriad, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
+	-moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+	-moz-transition: left 500ms ease-in-out ;
+	-moz-transition-delay: 500ms;
+	-webkit-transition: left 500ms ease-in-out ;
+	-webkit-transition-delay: 500ms;
+	-o-transition: left 500ms ease-in-out ;
+	-o-transition-delay: 500ms;
+	-ms-transition: left 500ms ease-in-out ;
+	-ms-transition-delay: 500ms;
+	transition: left 500ms ease-in-out ;
+	transition-delay: 500ms;
+}
+
+
+/******************** THE TAB SWITCHING FUNCTIONALITY **************/
+
+
+/* On page load with no hash tag in url, display first pane and highlight first tab */
+.panes > div:first-of-type {
+	z-index: 1;
+	left: -1px;
+	-moz-transition-delay: 0;
+	-webkit-transition-delay:0;
+	-o-transition-delay:0;
+	-ms-transition-delay: 0;
+	transition-delay: 0;
+}
+
+.tabs li:first-child .active { display: block;}
+
+
+/* On url hash change first hide all panes */
+input[name=pane]:checked + .dummy .panes > div {
+	z-index: 0;
+	left: 600px;
+}
+
+input[name=pane]:checked + .dummy .panes > div:first-of-type {
+	-moz-transition-delay: 500ms;
+	-webkit-transition-delay: 500ms;
+	-o-transition-delay: 500ms;
+	-ms-transition-delay: 500ms;
+	transition-delay: 500ms;
+}
+
+input[name=pane]:checked + .dummy .tabs li .active { display: none;}
+
+
+/* After the previous step now display the appropriate pane */
+#p1:checked + .dummy .panes > div:nth-of-type(1) ,
+#p2:checked + .dummy .panes > div:nth-of-type(2) ,
+#p3:checked + .dummy .panes > div:nth-of-type(3) {
+	z-index: 1;
+	left: -1px;
+	-moz-transition-delay: 0;
+	-webkit-transition-delay:0;
+	-o-transition-delay:0;
+	-ms-transition-delay: 0;
+	transition-delay: 0;
+}
+
+/* And also highlight the appropriate tab */
+#p1:checked + .dummy .tabs li:nth-child(1) .active,
+#p2:checked + .dummy .tabs li:nth-child(2) .active,
+#p3:checked + .dummy .tabs li:nth-child(3) .active {
+	display: block;
+}
+
+input[name=pane] { 
+	display: inline;
+	position: absolute; 
+	top: 100px;
+	left: 50px;
+	z-index: -1;				
+}
+
+.dark .tabs li {
+	background-color: #aaaaaa;
+	background-image: -moz-linear-gradient(top, #aaaaaa, #444444); 
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #aaaaaa),color-stop(1, #444444));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444')"; 
+}
+
+.dark .tabs li .active {
+	background-color: #333;
+	background-image: -moz-linear-gradient(top, #333, #333);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #333),color-stop(1, #333)); 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#333', EndColorStr='#333'); 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#333', EndColorStr='#333')"; 
+}
+
+.dark .tabs li .active:before {
+	border: 3px solid #333;
+	border-top: none;
+	border-left: none;
+}
+
+.dark .tabs li .active:after {
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+}
+
+.dark .tab-strip {
+	background: #333;
+}
+
+.dark .panes, .dark .panes-scroll, .dark .no-bg > div {
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(top, #ffffff, #cccccc); 
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #cccccc)); 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc')";
+}
+
+.dark .panes > div, .dark .panes-scroll > div {
+	color: #333;
+}
+
+.dark .panes > div h2, .dark .panes-scroll > div h2 {
+	color: #333;
+}
