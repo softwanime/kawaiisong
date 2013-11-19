@@ -1,11 +1,11 @@
 #tab-area {
-    width: 550px;
+    width: 600px;
     margin: 40px auto 0 auto;
 	position: relative;
 }
 
-.dummy {
-	outline: none;  /* For IE */
+.dummy{
+    outline: none;  /* For IE */
 }
 
 input[name=pane] { display: none;}
@@ -80,6 +80,7 @@ input[name=pane] { display: none;}
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Code to achieve inverted round corners at bottom of #active */
 .tabs li .active:before {
 	content: '';
 	position: absolute;
@@ -106,13 +107,14 @@ input[name=pane] { display: none;}
 	border-radius: 0 0 0 18px;
 }
 
+/* The strip between the tabs and the panes */
 .tab-strip {
 	content: '';
 	position: relative;
 	clear: both;
 	z-index: 1;
 	height: 10px;
-	width: 550px;
+	width: 600px;
 	-moz-border-radius: 8px 8px 0 0;
 	-webkit-border-radius: 8px 8px 0 0;
 	border-radius: 8px 8px 0 0;
@@ -121,104 +123,141 @@ input[name=pane] { display: none;}
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.panes-scroll {
-    width: 550px;
+
+/* Styles for the panes and their parent wrapper */
+.panes {
+    width: 598px;
+	overflow: hidden;
 	position: relative;
-    overflow:hidden;
-    border: 1px solid #aaa;
+	border: 1px solid #aaa;
 	border-top: none;
-    -moz-border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
     -webkit-border-radius: 0 0 8px 8px;
     border-radius: 0 0 8px 8px;
-    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+	-moz-transition: height 500ms ease-in-out ;
+	-moz-transition-delay: 500ms;
+	-webkit-transition: height 500ms ease-in-out ;
+	-webkit-transition-delay: 500ms;
+	-o-transition: height 500ms ease-in-out ;
+	-o-transition-delay: 500ms;
+	-ms-transition: height 500ms ease-in-out ;
+	-ms-transition-delay: 500ms;
+	transition: height 500ms ease-in-out ;
+	transition-delay: 500ms;
 }
 
-.panes-items {
-	width: 1800px;
-	position: relative;
-	-webkit-transition: margin-left 500ms ease-in-out ;
-	-moz-transition: margin-left 500ms ease-in-out ;
-	-o-transition: margin-left 500ms ease-in-out ;
-	-ms-transition: margin-left 500ms ease-in-out ;
-	transition: margin-left 500ms ease-in-out ;
-}
-
-.panes-items > div {
+.panes > div {
     padding: 20px;
-	width: 510px;
-	height: 0;
 	font: 12px/1.4 Calibri, "Myriad Pro", Myriad, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	-moz-transition: z-index, opacity 500ms ease-in-out ;
+	-webkit-transition: z-index, opacity 500ms ease-in-out ;
+	-o-transition: z-index, opacity 500ms ease-in-out ;
+	-ms-transition: z-index, opacity 500ms ease-in-out ;
+	transition: z-index, opacity 500ms ease-in-out ;
 }
 
-.panes-items > div:first-of-type { height: auto; }
+.panes > div:first-of-type { height: 120px;}
+.panes > div:nth-of-type(2) { height: 230px;}
+.panes > div:last-of-type { height: 150px;}
+
+
+/******************** THE TAB SWITCHING FUNCTIONALITY **************/
+
+/* On page load with no hash tag in url, display first pane and highlight first tab */
+.panes { height: 160px;}
+.panes > div:first-of-type { z-index: 2; opacity: 1;}
 .tabs li:first-child .active { display: block;}
 
-input[name=pane]:checked + .dummy .panes-items > div { height: 0; }
+
+/* On url hash change first hide all panes and remove highlight from all tabs */
+input[name=pane]:checked + .dummy .panes > div { z-index: 1; opacity: 0;}
 input[name=pane]:checked + .dummy .tabs li .active { display: none;}
 
-#p1:checked + .dummy .panes-items { margin-left: 0;}
-#p2:checked + .dummy .panes-items { margin-left: -550px;}
-#p3:checked + .dummy .panes-items { margin-left: -1100px;}
 
-#p1:checked + .dummy .panes-items > div:nth-of-type(1) ,
-#p2:checked + .dummy .panes-items > div:nth-of-type(2) ,
-#p3:checked + .dummy .panes-items > div:nth-of-type(3) {
-	height: auto;
+/* After the previous step now display the appropriate pane */
+#p1:checked + .dummy .panes > div:nth-of-type(1) ,
+#p2:checked + .dummy .panes > div:nth-of-type(2) ,
+#p3:checked + .dummy .panes > div:nth-of-type(3) {
+	 z-index:2;
+	 opacity: 1;
 }
 
+/* Change the height of .panes accordingly */
+#p1:checked + .dummy .panes { height: 160px;}
+#p2:checked + .dummy .panes { height: 270px;}
+#p3:checked + .dummy .panes { height: 190px;}
+
+/* And also highlight the appropriate tab */
 #p1:checked + .dummy .tabs li:nth-child(1) .active,
 #p2:checked + .dummy .tabs li:nth-child(2) .active,
 #p3:checked + .dummy .tabs li:nth-child(3) .active {
 	display: block;
 }
 
+/********* Hide the radio buttons by placing them under the tabs ***************/
+				
+input[name=pane] { 
+	display: inline;
+	position: absolute; 
+	top: 100px;
+	left: 50px;
+	z-index: -1;				
+}
+
+/************** DARK VERSION ***************/
+
 .dark .tabs li {
-	background-color: #aaaaaa;
-	background-image: -moz-linear-gradient(top, #aaaaaa, #444444); 
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #aaaaaa),color-stop(1, #444444));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#444444')"; 
+	background-color: #222222;
+	background-image: -moz-linear-gradient(top, #888888, #222222); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #888888),color-stop(1, #222222)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#888888', EndColorStr='#222222'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#888888', EndColorStr='#222222')"; /* IE8 */
 }
 
 .dark .tabs li .active {
-	background-color: #333;
-	background-image: -moz-linear-gradient(top, #333, #333);
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #333),color-stop(1, #333)); 
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#333', EndColorStr='#333'); 
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#333', EndColorStr='#333')"; 
+	background-color: #09f;
+	background-image: -moz-linear-gradient(top, #003355, #0099ff); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #003355),color-stop(1, #0099ff)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#003355', EndColorStr='#0099ff'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#003355', EndColorStr='#0099ff')"; /* IE8 */
 }
 
 .dark .tabs li .active:before {
-	border: 3px solid #333;
+	border: 3px solid #09f;
 	border-top: none;
 	border-left: none;
 }
 
 .dark .tabs li .active:after {
-	border: 3px solid #333;
+	border: 3px solid #09f;
 	border-top: none;
 	border-right: none;
 }
 
 .dark .tab-strip {
-	background: #333;
+	background: #09f;
 }
 
 .dark .panes, .dark .panes-scroll, .dark .no-bg > div {
-	background-color: #ffffff;
-	background-image: -moz-linear-gradient(top, #ffffff, #cccccc); 
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #cccccc)); 
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc')";
+	background-color: #101010;
+	background-image: -moz-linear-gradient(top, #777777, #101010); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #777777),color-stop(1, #101010)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#101010'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#101010')"; /* IE8 */
 }
 
 .dark .panes > div, .dark .panes-scroll > div {
-	color: #333;
+	color: #f5f5f5;
 }
 
 .dark .panes > div h2, .dark .panes-scroll > div h2 {
-	color: #333;
+	color: #0df;
 }
