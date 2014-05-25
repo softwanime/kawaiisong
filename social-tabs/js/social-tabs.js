@@ -221,7 +221,7 @@
 				classSlide: 'dcsmt-slide',
 				active: 'active',
 				zopen: 1000,
-				imagePath: 'https://softwanime.googlecode.com/svn/social-tabs/images/icons'
+				imagePath: 'https://softwanime.googlecode.com/svn/social-tabs/images/icons/',
 			};
 			this.o = {};
 			this.timer_on = 0;
