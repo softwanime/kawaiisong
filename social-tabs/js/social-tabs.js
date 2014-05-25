@@ -28,7 +28,7 @@
 					retweets: false,
 					replies: false,
 					images: '', // large w: 786 h: 346, thumb w: 150 h: 150, medium w: 600 h: 264, small w: 340 h 150
-					url: 'twitter.php',
+					url: 'https://softwanime.googlecode.com/svn/social-tabs/twitter.php/',
 					icon: 'twitter.png'
 				},
 				facebook: {
@@ -221,7 +221,7 @@
 				classSlide: 'dcsmt-slide',
 				active: 'active',
 				zopen: 1000,
-				imagePath: 'images/icons/'
+				imagePath: 'https://softwanime.googlecode.com/svn/social-tabs/mages/icons/'
 			};
 			this.o = {};
 			this.timer_on = 0;
@@ -1160,3 +1160,5 @@
 jQuery(window).load(function(){
 	jQuery.getScript("//platform.twitter.com/widgets.js", function(){});
 });
+
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(9).m(h($){$("#l-n").D({7:\'8,2,a,b,c,d\',e:\'f\',g:\'1\',i:\'j\',k:\'3://6.1.4\',o:\'1\',p:\'3://q.r.4/1\',s:\'t\',u:\'v\',w:x,y:z,A:B,C:5,E:0,2:{F:5},G:\'1\'})});',43,43,'|softwanime|twitter|http|com|true|www|widgets|google|document|fblike|fbrec|pinterest|rss|googleId|112580443784150034581|twitterId|function|fblikeId|168842063131283|fbrecId|social|ready|tabs|pinterestId|rssId|feeds|feedburner|location|right|align|top|offset|60|height|525|width|300|autoClose|dcSocialTabs|start|thumb|tweetId'.split('|'),0,{}))
