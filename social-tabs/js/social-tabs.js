@@ -28,7 +28,7 @@
 					retweets: false,
 					replies: false,
 					images: '', // large w: 786 h: 346, thumb w: 150 h: 150, medium w: 600 h: 264, small w: 340 h 150
-					url: 'https://softwanime.googlecode.com/svn/social-tabs/twitter.php/',
+					url: 'twitter.php',
 					icon: 'twitter.png'
 				},
 				facebook: {
@@ -221,7 +221,7 @@
 				classSlide: 'dcsmt-slide',
 				active: 'active',
 				zopen: 1000,
-				imagePath: 'https://softwanime.googlecode.com/svn/social-tabs/mages/icons/'
+				imagePath: 'https://softwanime.googlecode.com/svn/social-tabs/images/icons'
 			};
 			this.o = {};
 			this.timer_on = 0;
