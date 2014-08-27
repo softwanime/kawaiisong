@@ -1167,7 +1167,7 @@ $(document).ready(function($) {
         location: 'right',
         align: 'top',
         offset: 160,
-        height: 550,
+        height: 525,
         width: 300,
         autoClose: true,
         start: 0,
