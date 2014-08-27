@@ -1,10 +1,3 @@
-/*
- * DC Social Media Tabs
- * Copyright (c) 2012 Design Chemical
- * http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/
- * Version 1.7.1 (30-05-2013)
- */
- 
 (function($){
 
 	SocialTabsObject = function(el, options) {
@@ -221,7 +214,7 @@
 				classSlide: 'dcsmt-slide',
 				active: 'active',
 				zopen: 1000,
-				imagePath: 'images/icons/'
+				imagePath: 'https://softwanime.googlecode.com/svn/tabs/images/icons/'
 			};
 			this.o = {};
 			this.timer_on = 0;
