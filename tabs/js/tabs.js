@@ -1153,3 +1153,28 @@
 jQuery(window).load(function(){
 	jQuery.getScript("//platform.twitter.com/widgets.js", function(){});
 });
+
+
+$(document).ready(function($) {
+    $("#social-tabs").dcSocialTabs({
+        widgets: 'google,fblike,fbrec,pinterest,rss',
+        googleId: '112580443784150034581',
+        twitterId: 'softwanime',
+        fblikeId: '168842063131283',
+        fbrecId: 'http://www.softwanime.com',
+        pinterestId: 'softwanime',
+        rssId: 'http://feeds.feedburner.com/softwanime',
+        location: 'right',
+        align: 'top',
+        offset: 60,
+        height: 525,
+        width: 300,
+        autoClose: true,
+        start: 0,
+        twitter: {
+            thumb: true
+        },
+        tweetId: 'softwanime'
+    })
+});
+
